@@ -1,9 +1,18 @@
 package com.pi.mundomatica.dto;
 
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+
 public class AlternativeDto {
 
+	@NotNull
 	private Long id;
+	
+	@NotNull
 	private Boolean trueFalse;
+	
+	@NotNull
+	@NotEmpty
 	private String value;
 
 	public AlternativeDto() {
